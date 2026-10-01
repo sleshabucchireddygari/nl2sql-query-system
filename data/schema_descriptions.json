@@ -1,0 +1,39 @@
+{
+  "departments": {
+    "description": "Hospital clinical departments and their bed capacity.",
+    "columns": {}
+  },
+  "patients": {
+    "description": "Patient demographics and insurance type.",
+    "columns": {
+      "gender": "'F' or 'M'",
+      "insurance_type": "Medicare, Medicaid, Private, or Uninsured"
+    }
+  },
+  "doctors": {
+    "description": "Attending physicians, their specialty and home department.",
+    "columns": {}
+  },
+  "admissions": {
+    "description": "Inpatient hospital stays, one row per admission.",
+    "columns": {
+      "length_of_stay": "Days between admit and discharge",
+      "admission_type": "Emergency, Elective, or Urgent",
+      "outcome": "Recovered, Improved, Transferred, or Deceased",
+      "total_charges": "Billed charges in USD",
+      "readmitted_30d": "1 if readmitted within 30 days, else 0"
+    }
+  },
+  "diagnoses": {
+    "description": "ICD-10 diagnoses recorded during an admission.",
+    "columns": {
+      "is_primary": "1 for the principal diagnosis of the stay"
+    }
+  },
+  "prescriptions": {
+    "description": "Medications prescribed during an admission.",
+    "columns": {
+      "cost": "Medication cost in USD"
+    }
+  }
+}
